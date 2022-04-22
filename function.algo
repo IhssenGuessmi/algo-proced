@@ -1,0 +1,28 @@
+ALGORITHM algorithm_Procedural
+VAR
+    V1,V2:Array_OF_INTEGER [10];
+
+BEGIN
+FOR i FROM 0 TO v1.lenght-1 STEP 1  DO
+    Read(v1[i])
+    Read(V2[i])
+END_FOR
+
+    IF (producut(V1,v2)=0) THEN
+        write ("vectors are orthogonal")
+    ELSE
+        write ("vectors are not orthogonal")
+    END_IF
+END
+
+// function
+FUNCTION producut(v1,v2:Array OF INTEGER) : INTEGER
+VAR
+    sum:INTEGER:=0
+    i:INTEGER:=0
+BEGIN
+    FOR i FROM 0 TO v1.lenght-1 STEP 1  DO
+    sum=sum+(v1[i]*v2[i])
+    RETURN sum ;
+    END_FOR
+END
